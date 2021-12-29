@@ -40,10 +40,16 @@ void user::sign_up()
 		cout<<"\n\nEnter any key to continue";
 		getch();
 	}else{
-		cout<<"\t\t\tPASSWORD DON'T MATCH"<<endl;
-		getch();
+		cout<<"\n\n\t\t\tRegistering.";
+		for(int i=1;i<=8;i++)
+		{
+			Sleep(500);
+			cout<<".....";
+		}
+		cout<<"\n\n\t\t\tPASSWORD DON'T MATCH\n\n"<<endl;
+		system("PAUSE");
 		system("CLS");
-		sign_up();
+		menu();
 	}
 	
 }
